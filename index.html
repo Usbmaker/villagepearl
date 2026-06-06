@@ -494,16 +494,17 @@
                 <video
                     controls
                     class="w-full"
-                    preload="metadata"
-                    id="drone-video">
+                    preload="none"
+                    id="drone-video"
+                    style="pointer-events:none;">
                     <source src="img/drone-tour.mp4" type="video/mp4">
                 </video>
                 <div id="video-poster"
                      class="absolute inset-0 cursor-pointer"
-                     onclick="document.getElementById('drone-video').play(); document.getElementById('video-poster').style.display='none'">
-                    <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover brightness-[1.75]">
+                     onclick="var v=document.getElementById('drone-video'); var p=document.getElementById('video-poster'); v.style.pointerEvents='auto'; p.style.display='none'; v.play();">
+                    <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover">
                     <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="w-20 h-20 rounded-full bg-black/30 backdrop-blur-sm border border-white/40 flex items-center justify-center hover:bg-black/50 transition">
+                        <div class="w-20 h-20 rounded-full bg-black/25 border border-white/40 flex items-center justify-center hover:bg-black/45 transition">
                             <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                         </div>
                     </div>
