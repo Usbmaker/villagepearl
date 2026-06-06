@@ -114,7 +114,7 @@
                 <div class="relative">
                     <img src="img/backyard-twilight.jpg"
                          alt="Village Pearl backyard oasis at twilight — outdoor seating, French doors, lush landscaping"
-                         class="rounded-2xl shadow-lg w-full h-[420px] object-cover">
+                         class="rounded-2xl shadow-lg w-full h-[420px] object-cover brightness-125">
                 </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',0)">
-                        <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Hillside setting at twilight</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',1)">
@@ -215,7 +215,7 @@
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Alfresco dining under the tree canopy</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-64 cursor-pointer relative" onclick="openGallery('walkthrough',12)">
-                        <img src="img/backyard-twilight.jpg" alt="Upper deck at twilight — Pacific sky, golden hour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="img/backyard-twilight.jpg" alt="Upper deck at twilight — Pacific sky, golden hour" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Golden hour from the deck</p></div>
                     </div>
                 </div>
@@ -353,7 +353,7 @@
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Outdoor shower — private garden setting</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',34)">
-                        <img src="img/aerial-sunset.jpg" alt="Aerial at sunset — Pacific horizon beyond La Jolla" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="img/aerial-sunset.jpg" alt="Aerial at sunset — Pacific horizon beyond La Jolla" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Aerial at sunset — Pacific horizon</p></div>
                     </div>
                 </div>
@@ -523,7 +523,7 @@
                 <div id="video-poster"
                      class="absolute inset-0 cursor-pointer"
                      onclick="var v=document.getElementById('drone-video'); var p=document.getElementById('video-poster'); p.style.display='none'; v.play(); document.addEventListener('mousemove', function re(){v.style.pointerEvents='auto'; document.removeEventListener('mousemove',re);}, {once:true});">
-                    <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover">
+                    <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover brightness-125">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-20 h-20 rounded-full bg-black/25 border border-white/40 flex items-center justify-center hover:bg-black/45 transition">
                             <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -668,10 +668,13 @@ function backdropClose(e) {
     if (e.target === e.currentTarget) closeLightbox();
 }
 
+const twilightSrcs = new Set(['img/hero-twilight-v2.jpg','img/backyard-twilight.jpg','img/aerial-sunset.jpg']);
 function showPhoto() {
     const p = currentGallery[currentIndex];
-    document.getElementById('lightbox-img').src = p.src;
-    document.getElementById('lightbox-img').alt = p.caption;
+    const img = document.getElementById('lightbox-img');
+    img.src = p.src;
+    img.alt = p.caption;
+    img.style.filter = twilightSrcs.has(p.src) ? 'brightness(1.25)' : '';
     document.getElementById('lightbox-caption').textContent = p.caption;
     document.getElementById('lightbox-counter').textContent = (currentIndex + 1) + ' of ' + currentGallery.length;
 }
