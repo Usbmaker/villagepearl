@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Village Pearl | Luxury La Jolla Retreat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
+        .bg-sage { background-color: #B2AC88; }
+        .text-sage { color: #7A755B; }
+        .bg-cream { background-color: #E8D7B9; }
+        .bg-slate-deep { background-color: #2F3E46; }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-cream text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold serif italic text-slate-900">The Village Pearl</div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-sage transition">Home</a>
+                <a href="#aura" class="hover:text-sage transition">The Aura</a>
+                <a href="#rooms" class="hover:text-sage transition">The Rooms</a>
+                <a href="#neighborhood" class="hover:text-sage transition">Neighborhood</a>
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-slate-700 transition">Check Availability</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <img src="img/hero-hillside.jpg"
+             alt="The Village Pearl — 1938 Craftsman nestled in La Jolla hillside" class="absolute w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">A Sun-Drenched <br><span class="italic">1938 Craftsman Retreat</span></h1>
+            <p class="text-lg md:text-xl mb-8 font-light max-w-2xl mx-auto">Experience the timeless aura of La Jolla in a sanctuary of Pacific light and coastal elegance.</p>
+            <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-white text-slate-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-cream transition shadow-xl">Book Your Stay</a>
+        </div>
+    </section>
+
+    <!-- Aura Section -->
+    <section id="aura" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a6d?auto=format&fit=crop&w=800&q=80" 
+                     alt="Interior Detail" class="rounded-2xl shadow-2xl">
+                <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-sage/20 rounded-full -z-10"></div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-6 text-slate-900">Experience the Timeless Aura</h2>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    Step into a sanctuary where historic grandeur meets the effortless ease of coastal living. The Village Pearl is a meticulously preserved 1938 Craftsman cottage that does more than just house guests—it captures a feeling.
+                </p>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    From the woven accents and bamboo details to the warm, open spaces, every inch of this 1,850 sq. ft. retreat is curated to create an atmosphere of absolute peace.
+                </p>
+                <div class="flex items-center space-x-4 text-sage font-semibold">
+                    <span class="text-2xl">☀️</span>
+                    <span>Bathed in Natural Pacific Light</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Flow Section -->
+    <section class="bg-slate-100 py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Indoor-Outdoor Harmony</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">A seamless transition between a gourmet interior and a private coastal oasis.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b2973973d?auto=format&fit=crop&w=800&q=80" 
+                         alt="Gourmet Kitchen" class="rounded-2xl shadow-lg">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h3 class="text-3xl font-bold mb-4 text-slate-900">The Heart of the Home</h3>
+                    <p class="text-lg text-slate-600 mb-6">
+                        The open-concept living area and gourmet chef's kitchen are designed for connection. Whether preparing a feast or enjoying a morning coffee, the space flows effortlessly onto the private deck.
+                    </p>
+                    <ul class="space-y-3 text-slate-700">
+                        <li class="flex items-center">✅ Professional Grade Chef's Kitchen</li>
+                        <li class="flex items-center">✅ Shaded Dining for 10 Guests</li>
+                        <li class="flex items-center">✅ Gas BBQ & Outdoor Shower</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-24">
+                <div class="text-right">
+                    <h3 class="text-3xl font-bold mb-4 text-slate-900">The Backyard Oasis</h3>
+                    <p class="text-lg text-slate-600 mb-6">
+                        A fully fenced, landscaped yard providing a sense of absolute privacy. Relax under the stars or rinse off in the outdoor shower after a day at the beach.
+                    </p>
+                    <div class="inline-block bg-white px-4 py-2 rounded-lg shadow-sm font-medium text-sage">
+                        Ocean & Hillside Panoramas
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd16270a2d?auto=format&fit=crop&w=800&q=80" 
+                         alt="Backyard Oasis" class="rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Rooms Section -->
+    <section id="rooms" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">Rest & Restore</h2>
+            <p class="text-slate-600">Top-shelf mattresses, luxury linens, and blackout curtains in every room.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Master -->
+            <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505691938838-29a2c33b0955?auto=format&fit=crop&w=600&q=80" 
+                         alt="Master Suite" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">The Master Sanctuary</h3>
+                    <p class="text-slate-600 mb-4">A luxurious King retreat bathed in light, featuring a cozy seating area for ultimate seclusion.</p>
+                    <span class="text-sm font-semibold text-sage uppercase tracking-wider">Upper Level</span>
+                </div>
+            </div>
+
+            <!-- Queen Rooms -->
+            <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1540518614886-7eb170a6978a?auto=format&fit=crop&w=600&q=80" 
+                         alt="Queen Bedroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Main Level Retreats</h3>
+                    <p class="text-slate-600 mb-4">Two comfortable bedrooms with Queen beds and direct French door access to the garden oasis.</p>
+                    <span class="text-sm font-semibold text-sage uppercase tracking-wider">First Floor Accessibility</span>
+                </div>
+            </div>
+
+            <!-- Bunk Room -->
+            <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                <div class="h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555041499-677f277676f7?auto=format&fit=crop&w=600&q=80" 
+                         alt="Bunk Room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">The Group Powerhouse</h3>
+                    <p class="text-slate-600 mb-4">Perfect for families: Twin bunk beds and a pull-out trundle to comfortably accommodate the whole crew.</p>
+                    <span class="text-sm font-semibold text-sage uppercase tracking-wider">Upper Level</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhood Section -->
+    <section id="neighborhood" class="bg-slate-900 text-white py-24 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-8">The Gold Standard of Walkability</h2>
+                <p class="text-slate-400 text-lg mb-8">Leave the car in the driveway. The Village Pearl is positioned so you can experience the very best of La Jolla on foot.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-sage rounded-full flex items-center justify-center text-white font-bold">12</div>
+                        <span class="text-xl">Min walk to Museum of Contemporary Art</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-sage rounded-full flex items-center justify-center text-white font-bold">15</div>
+                        <span class="text-xl">Min walk to Windansea Beach</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-sage rounded-full flex items-center justify-center text-white font-bold">17</div>
+                        <span class="text-xl">Min walk to La Jolla Cove & Village Center</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
+                <!-- Placeholder for a map image or a scenic shot of the village -->
+                <img src="https://images.unsplash.com/photo-1507525428034-b723a3f7a9dd?auto=format&fit=crop&w=800&q=80" 
+                     alt="La Jolla Map/View" class="w-full h-full object-cover opacity-80">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="bg-white/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/30 text-white font-medium">
+                        📍 Prime La Jolla Location
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-8 md:mb-0">
+                <div class="text-2xl font-bold serif italic text-slate-900 mb-2">The Village Pearl</div>
+                <p class="text-slate-500">La Jolla, California</p>
+            </div>
+            <div class="flex space-x-6 text-slate-600 text-sm">
+                <a href="#" class="hover:text-sage transition">Policies</a>
+                <a href="#" class="hover:text-sage transition">Contact</a>
+                <a href="#" class="hover:text-sage transition">Terms</a>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-700 transition">
+                    Book Your Stay Now
+                </a>
+            </div>
+        </div>
+        <div class="text-center mt-12 text-xs text-slate-400">
+            &copy; 2026 The Village Pearl. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
