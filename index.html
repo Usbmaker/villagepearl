@@ -501,7 +501,7 @@
                 </video>
                 <div id="video-poster"
                      class="absolute inset-0 cursor-pointer"
-                     onclick="var v=document.getElementById('drone-video'); var p=document.getElementById('video-poster'); v.style.pointerEvents='auto'; p.style.display='none'; v.play();">
+                     onclick="var v=document.getElementById('drone-video'); var p=document.getElementById('video-poster'); p.style.display='none'; v.play(); document.addEventListener('mousemove', function re(){v.style.pointerEvents='auto'; document.removeEventListener('mousemove',re);}, {once:true});">
                     <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-20 h-20 rounded-full bg-black/25 border border-white/40 flex items-center justify-center hover:bg-black/45 transition">
