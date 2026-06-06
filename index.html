@@ -196,53 +196,98 @@
 
     <!-- Neighborhood Section -->
     <section id="neighborhood" class="bg-slate-900 text-white py-24 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">The Gold Standard<br>of Walkability</h2>
-                <p class="text-slate-400 text-lg mb-10">Leave the car in the driveway. Experience La Jolla the way it was meant — on foot.</p>
-
-                <div class="space-y-6">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-14 h-14 bg-sage rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">12</div>
-                        <div>
-                            <div class="font-semibold text-lg">Museum of Contemporary Art</div>
-                            <div class="text-slate-400 text-sm">12-minute walk</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-14 h-14 bg-sage rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">15</div>
-                        <div>
-                            <div class="font-semibold text-lg">Windansea Beach</div>
-                            <div class="text-slate-400 text-sm">15-minute walk</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-14 h-14 bg-sage rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">17</div>
-                        <div>
-                            <div class="font-semibold text-lg">La Jolla Cove & Village Center</div>
-                            <div class="text-slate-400 text-sm">17-minute walk · 50+ restaurants & boutiques</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-14 h-14 bg-slate-700 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">19m</div>
-                        <div>
-                            <div class="font-semibold text-lg">San Diego International Airport</div>
-                            <div class="text-slate-400 text-sm">19-minute drive · Arrive and unwind immediately</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">The Gold Standard of Walkability</h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Leave the car in the driveway. Experience La Jolla the way it was meant — on foot.</p>
             </div>
-            <div class="relative h-[460px] rounded-3xl overflow-hidden shadow-2xl">
-                <img src="img/aerial-sunset.jpg"
-                     alt="Village Pearl aerial view with La Jolla neighborhood and Pacific Ocean"
-                     class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-slate-900/30"></div>
-                <div class="absolute bottom-6 left-6 right-6">
-                    <div class="bg-white/15 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/20">
-                        <div class="text-white font-semibold text-lg mb-1">Quiet Residential Neighborhood</div>
-                        <div class="text-white/70 text-sm">Pavilions Gourmet grocery, CVS, and breakfast spots a 2-min stroll. Tree-lined streets. Neighbor-friendly.</div>
+
+            <!-- Landmark Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+
+                <!-- MCASD -->
+                <a href="https://www.mcasd.org" target="_blank"
+                   class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
+                    <div class="h-72 overflow-hidden">
+                        <img src="img/landmark-mcasd.jpg"
+                             alt="Museum of Contemporary Art San Diego — La Jolla"
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 brightness-75">
                     </div>
-                </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <div class="w-10 h-10 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">12</div>
+                            <span class="text-white/70 text-sm">min walk</span>
+                        </div>
+                        <div class="text-white font-bold text-xl group-hover:text-sage transition">Museum of Contemporary Art</div>
+                        <div class="text-white/60 text-sm mt-1">mcasd.org ↗</div>
+                    </div>
+                </a>
+
+                <!-- Windansea -->
+                <a href="https://www.sandiego.gov/lifeguards/beaches/windan" target="_blank"
+                   class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
+                    <div class="h-72 overflow-hidden">
+                        <img src="img/landmark-windansea.jpg"
+                             alt="Windansea Beach — the famous palm-frond surf shack, California Historic Landmark"
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 brightness-75">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <div class="w-10 h-10 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">15</div>
+                            <span class="text-white/70 text-sm">min walk</span>
+                        </div>
+                        <div class="text-white font-bold text-xl group-hover:text-sage transition">Windansea Beach</div>
+                        <div class="text-white/60 text-sm mt-1">California Historic Landmark ↗</div>
+                    </div>
+                </a>
+
+                <!-- La Jolla Cove -->
+                <a href="https://www.sandiego.gov/lifeguards/beaches/cove" target="_blank"
+                   class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
+                    <div class="h-72 overflow-hidden">
+                        <img src="img/landmark-lajolla-cove.jpg"
+                             alt="La Jolla Cove — iconic turquoise waters"
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500 brightness-75">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <div class="w-10 h-10 bg-sage rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">17</div>
+                            <span class="text-white/70 text-sm">min walk</span>
+                        </div>
+                        <div class="text-white font-bold text-xl group-hover:text-sage transition">La Jolla Cove & Village Center</div>
+                        <div class="text-white/60 text-sm mt-1">50+ restaurants & boutiques ↗</div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Airport note -->
+            <div class="text-center text-slate-400 text-sm">
+                <span class="inline-flex items-center space-x-2">
+                    <span>✈️</span>
+                    <span>San Diego International Airport (SAN) — 19-minute drive. Arrive and unwind immediately.</span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour / Drone Video Section -->
+    <section class="bg-slate-950 py-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <p class="text-sm font-semibold tracking-widest uppercase text-sage mb-3">Aerial Drone Tour</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">See It From Above</h2>
+            <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">A bird's-eye view of the property, the hillside setting, and the La Jolla neighborhood that surrounds it.</p>
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                    controls
+                    poster="img/hero-twilight-hillside.jpg"
+                    class="w-full"
+                    preload="metadata">
+                    <source src="img/drone-tour.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </section>
