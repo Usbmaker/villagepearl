@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Jolla Dining Guide | The Village Pearl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
+        .bg-sage { background-color: #B2AC88; }
+        .text-sage { color: #7A755B; }
+        .border-sage { border-color: #B2AC88; }
+        .bg-cream { background-color: #F5ECD7; }
+        .bg-slate-deep { background-color: #2F3E46; }
+    </style>
+</head>
+<body class="bg-cream text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold serif italic text-slate-900 hover:text-sage transition">The Village Pearl</a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="index.html#home" class="hover:text-sage transition">Home</a>
+                <a href="index.html#aura" class="hover:text-sage transition">The Aura</a>
+                <a href="index.html#walkthrough" class="hover:text-sage transition">Walk Through</a>
+                <a href="index.html#rooms" class="hover:text-sage transition">The Rooms</a>
+                <a href="index.html#neighborhood" class="hover:text-sage transition">Neighborhood</a>
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-slate-700 transition">Check Availability</a>
+            </div>
+            <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="md:hidden bg-slate-900 text-white px-4 py-2 rounded-full text-sm hover:bg-slate-700 transition">Book</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative h-[75vh] min-h-[520px] flex items-end">
+        <img src="img/aerial-sunset.jpg" alt="La Jolla at golden hour"
+             class="absolute inset-0 w-full h-full object-cover brightness-125">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+            <p class="text-sage font-semibold text-sm tracking-widest uppercase mb-3">For Village Pearl Guests</p>
+            <h1 class="serif text-6xl md:text-8xl font-bold text-white leading-none mb-4">La Jolla<br>Dining Guide</h1>
+            <p class="text-white/80 text-lg max-w-xl font-light">Curated by experience — the best tables within walking distance of the Pearl, and a handful worth the short drive.</p>
+        </div>
+    </section>
+
+    <!-- Tier Legend -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-sage font-semibold text-sm tracking-widest uppercase mb-5 text-center">How We Rank</p>
+            <h2 class="serif text-4xl md:text-5xl font-bold text-slate-900 mb-10 text-center leading-tight">Four Tiers. Every Occasion Covered.</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-center">
+                    <div class="text-4xl mb-3">👑</div>
+                    <h3 class="serif text-lg font-bold text-slate-900 mb-1">The Grand Table</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Destination dining. Reservation recommended. Worth every dollar.</p>
+                    <p class="text-slate-400 text-xs mt-2 font-semibold">$$$$</p>
+                </div>
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-center">
+                    <div class="text-4xl mb-3">🥂</div>
+                    <h3 class="serif text-lg font-bold text-slate-900 mb-1">Elevated Dining</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Polished atmosphere, serious kitchens. Worth dressing for.</p>
+                    <p class="text-slate-400 text-xs mt-2 font-semibold">$$$</p>
+                </div>
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-center">
+                    <div class="text-4xl mb-3">🌿</div>
+                    <h3 class="serif text-lg font-bold text-slate-900 mb-1">Local Favorites</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">La Jolla institutions. Quality without ceremony. Come as you are.</p>
+                    <p class="text-slate-400 text-xs mt-2 font-semibold">$$</p>
+                </div>
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-center">
+                    <div class="text-4xl mb-3">☀️</div>
+                    <h3 class="serif text-lg font-bold text-slate-900 mb-1">Casual &amp; Quick</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Coffee, bakeries, juice bars, and grab-and-go favorites.</p>
+                    <p class="text-slate-400 text-xs mt-2 font-semibold">$</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-6"><div class="border-t border-slate-200"></div></div>
+
+    <!-- GRAND TABLE -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-14">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-3xl">👑</span>
+                    <div>
+                        <p class="text-xs font-bold tracking-widest uppercase text-sage">Tier One</p>
+                        <h2 class="serif text-4xl md:text-5xl font-bold text-slate-900 leading-tight">The Grand Table</h2>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-base max-w-2xl ml-12">La Jolla's finest. Each of these earns its reputation. Reservations strongly recommended for dinner.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- George's at the Cove -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">California Coastal</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌊</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">George's at the Cove</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1250 Prospect St &nbsp;·&nbsp; (858) 454-4244</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">La Jolla's anchor fine dining experience. Sit upstairs on the ocean terrace for unobstructed Pacific views. Exceptional seafood and steak, polished service, and a setting that earns its iconic reputation.</p>
+                    <a href="https://www.georgesatthecove.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Reserve a Table →</a>
+                </div>
+
+                <!-- Eddie V's -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Prime Seafood &amp; Steak</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🥩</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Eddie V's Prime Seafood</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1270 Prospect St &nbsp;·&nbsp; (858) 459-5500</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Upscale and trendy — aged steaks, pristine seafood, and astonishing ocean views of La Jolla Cove. Reserve a table on the terrace. The full bar and outside deck deliver the same jaw-dropping Pacific panorama.</p>
+                    <a href="https://www.eddiev.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Reserve a Table →</a>
+                </div>
+
+                <!-- Nine-Ten -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Artisan Farm-to-Table</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌾</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Nine-Ten</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">910 Prospect St &nbsp;·&nbsp; (858) 964-5400</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Celebrated chef-driven dining in the heart of La Jolla. The menu is built around local artisan farmers and the finest regional fish — a constantly evolving, technique-forward experience that earns consistent critical praise.</p>
+                    <a href="https://www.nine-ten.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Reserve a Table →</a>
+                </div>
+
+                <!-- Himitsu -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Japanese · Omakase</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍣</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Himitsu</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1030 Torrey Pines Rd &nbsp;·&nbsp; (858) 263-4463</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Born in Tokyo — inspired by the sushi bars of Ginza. A discreet 9-person bar serving traditional nigiri and Japanese tapas at the highest quality. Chef Mitsu Aihara's menu is paired with a curated sake list and natural wines. "Himitsu" means secret.</p>
+                    <a href="https://www.himitsusd.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Reserve a Table →</a>
+                </div>
+
+                <!-- The Marine Room -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Classic La Jolla · Est. 1941</span>
+                        <span class="text-[11px] bg-amber-50 text-amber-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">Short drive</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌊</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">The Marine Room</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">2000 Spindrift Dr, La Jolla Shores &nbsp;·&nbsp; (858) 459-7222</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A La Jolla institution since 1941. At high tide, Pacific waves crash directly against the floor-to-ceiling windows — there is no comparable dining experience on the California coast. Exceptional for a special-occasion dinner or elevated brunch.</p>
+                    <a href="https://www.marineroom.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Reserve a Table →</a>
+                </div>
+
+                <!-- La Valencia / Whaling Bar -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Historic Landmark</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🏛️</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">La Valencia Hotel</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1132 Prospect St &nbsp;·&nbsp; (866) 905-6269</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">The "Pink Lady" of La Jolla. The Mediterranean Room serves daily breakfast, lunch, and dinner with ocean views. The legendary Whaling Bar — open since 1949, frequented by celebrities and locals alike — has officially returned with a menu spanning caviar and blini to a lobster roll.</p>
+                    <a href="https://www.lavalencia.com/dining" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Explore Dining →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-6"><div class="border-t border-slate-200"></div></div>
+
+    <!-- ELEVATED DINING -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-14">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-3xl">🥂</span>
+                    <div>
+                        <p class="text-xs font-bold tracking-widest uppercase text-sage">Tier Two</p>
+                        <h2 class="serif text-4xl md:text-5xl font-bold text-slate-900 leading-tight">Elevated Dining</h2>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-base max-w-2xl ml-12">Polished kitchens, serious menus, and an atmosphere worth savoring. The sweet spot between neighborhood and destination.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Bistro du Marché -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">French</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">5 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🥐</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Bistro du Marché</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7437 Girard Ave &nbsp;·&nbsp; (858) 551-7500</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Cozy, upscale French just three blocks from the Pearl — on the left as you walk down to Girard. Works closely with local farmers to source the finest seasonal ingredients. Intimate atmosphere and beautifully crafted classic French menu.</p>
+                    <a href="https://www.bistrodumarche.net/reservations/" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Reserve a Table →</a>
+                </div>
+
+                <!-- Catania -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Coastal Italian</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">8 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍝</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Catania</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7863 Girard Ave &nbsp;·&nbsp; (858) 247-0351</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A fun coastal Italian menu rooted in farm-to-table values and from-scratch cooking. The kind of place where the pasta is made in-house and the ingredients change with the season. Lively atmosphere, well-curated wine list.</p>
+                    <a href="https://www.cataniasd.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Paradisaea -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">California Creative</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🦀</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Paradisaea</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">5680 La Jolla Blvd, Bird Rock &nbsp;·&nbsp; (858) 255-8011</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">One of La Jolla's most creative menus — Dungeness crab tagliatelle with local sea urchin, wagyu beef nachos, Baja oysters with frozen passion fruit sangria. California cuisine taken seriously, without taking itself too seriously. A Bird Rock gem.</p>
+                    <a href="https://www.paradisaea.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Candor -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Wine Bar · Farm-to-Market</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍷</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Candor Restaurant</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1030 Torrey Pines Rd, Suite B &nbsp;·&nbsp; (858) 246-7818</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Everything made in-house, sourced directly from La Jolla's Open Aire Farmer's Market. A convivial neighborhood wine bar with an extensive list of French, Spanish, Italian, and West Coast producers. Excellent for a long, unhurried dinner.</p>
+                    <a href="https://dinecandor.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Brockton Villa -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Brunch · Coastal</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🏡</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Brockton Villa</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1235 Coast Blvd &nbsp;·&nbsp; (858) 454-7393</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A small, beloved cottage perched above the Cove — sea lions visible from the table. Famous for their "coast toast" and one of the best brunch views in La Jolla. A relaxed, timeless spot for a cozy meal overlooking the Pacific.</p>
+                    <a href="https://www.brocktonvilla.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Barbarella's -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Local &amp; Organic · Shores</span>
+                        <span class="text-[11px] bg-amber-50 text-amber-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">Short drive</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌿</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Barbarella's</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">2171 Avenida De La Playa &nbsp;·&nbsp; (858) 454-7373</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Eclectic and beloved at La Jolla Shores. Local and organic ingredients, outside seating with garden views, and an atmosphere that feels genuinely personal. Break bread here after a day at the beach.</p>
+                    <a href="https://www.barbarellarestaurant.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Cusp -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Coastal · Brunch</span>
+                        <span class="text-[11px] bg-amber-50 text-amber-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">Short drive</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🥂</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Cusp Dining &amp; Drinks</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7955 La Jolla Shores Dr &nbsp;·&nbsp; (858) 551-3620</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Local coastal ambience with an ocean view that makes every meal feel special. Excellent for a mimosa brunch — the setting does much of the work. Good California menu with a relaxed upscale feel.</p>
+                    <a href="https://www.cusprestaurant.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Piatti's -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Italian · La Jolla Shores</span>
+                        <span class="text-[11px] bg-amber-50 text-amber-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">Short drive</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍷</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Piatti's</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">2182 Avenida De La Playa &nbsp;·&nbsp; (858) 454-1589</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Italian done right for a reasonable budget. Ask to be seated outside under the tree for an intimate, unhurried evening. A neighborhood favorite at La Jolla Shores with consistent quality and a warm atmosphere.</p>
+                    <a href="https://www.piatti.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Beaumont's -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Bar &amp; Grill · Live Music</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🎸</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Beaumont's</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">5662 La Jolla Blvd, Bird Rock &nbsp;·&nbsp; (858) 459-0474</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Laid-back, beachy Bird Rock hang-out with live music, fine cocktails, and reliably good food. A welcoming neighborhood favorite — the kind of place that gets better the more often you go. Perfect for an easy evening out.</p>
+                    <a href="https://www.beaumontseatery.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-6"><div class="border-t border-slate-200"></div></div>
+
+    <!-- LOCAL FAVORITES -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-14">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-3xl">🌿</span>
+                    <div>
+                        <p class="text-xs font-bold tracking-widest uppercase text-sage">Tier Three</p>
+                        <h2 class="serif text-4xl md:text-5xl font-bold text-slate-900 leading-tight">Local Favorites</h2>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-base max-w-2xl ml-12">La Jolla's everyday institutions. Where the locals actually eat. No ceremony required — just good food and genuine character.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Puesto -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Mexican Street Food</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌮</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Puesto</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1026 Wall St &nbsp;·&nbsp; (858) 454-1260</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Trophy tacos, perfect margaritas, and the largest bar in the Village. An instant La Jolla classic — the kind of place you end up at every trip, whether you planned to or not. Lively, well-designed, excellent at every price point.</p>
+                    <a href="https://www.eatpuesto.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Duke's -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Hawaiian · Family Friendly</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌺</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Duke's La Jolla</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1216 Prospect St &nbsp;·&nbsp; (858) 454-5888</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Hawaiian style with a view — relaxed, fun, and genuinely family-friendly after a long day at the beach. The location on Prospect delivers Pacific views without the formality of fine dining. Perfect for winding down as the sun goes down.</p>
+                    <a href="https://www.dukeslajolla.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- El Pescador -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Fresh Fish Market</span>
+                        <span class="text-[11px] bg-green-50 text-green-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">3 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🐟</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">El Pescador Fish Market</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">634 Pearl St &nbsp;·&nbsp; (858) 456-2526</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Casual, hip, and right on Pearl Street. An abundant selection of the freshest fish in La Jolla — fish sandwiches, shrimp burritos, or your choice of any fresh grilled fish plate. This is where the locals get their seafood fix.</p>
+                    <a href="https://www.elpescadorfishmarket.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- The Spot -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">American · Est. 1915</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍔</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">The Spot</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1005 Prospect St &nbsp;·&nbsp; (858) 459-0800</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">The oldest continuously operating restaurant location in La Jolla — serving locals since 1915. Best known for highly customizable burgers, signature Chicago-style pizza, and a full-service bar open until 2am. An institution that earns its longevity.</p>
+                    <a href="https://www.thespotonline.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Mandarin House -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Chinese · Est. 1977</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🥢</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Mandarin House</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">6765 La Jolla Blvd &nbsp;·&nbsp; (858) 454-2007</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A La Jolla landmark since 1977. A favorite of locals for nearly five decades, blending Hong Kong techniques with inspired East Coast menu traditions. The kind of neighborhood Chinese restaurant that big cities lose track of — La Jolla has kept this one.</p>
+                    <a href="https://www.mandarinhouselj.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Aroi Thai -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Thai · Hidden Gem</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">8 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌶️</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Aroi Thai</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7523 Fay Ave &nbsp;·&nbsp; (858) 729-1883</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Tucked away and easy to miss — don't. The food is genuinely delicious and the staff are kind and attentive. Highly recommended for spicy Thai. A neighborhood secret that loyal regulars don't always share. Closed Tuesdays.</p>
+                    <a href="https://www.aroithailajolla.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Isola Pizza -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Wood-Fired Italian</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">8 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍕</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Isola Pizza Bar</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7734 Girard Ave &nbsp;·&nbsp; (858) 412-5566</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Wood-fired Neapolitan pizza alongside antipasti, fresh pasta, and bruschetta. A casual Italian that takes its craft seriously — the crust alone is worth the walk. Great for groups and easy weeknight dinners on Girard.</p>
+                    <a href="https://www.isolapizzabar.com/isola-la-jolla" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Public House -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Burgers &amp; Craft Beer</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍺</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Public House</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">830 Kline St &nbsp;·&nbsp; (858) 551-9210</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Historic La Jolla Village spot specializing in quality burgers, wine, and an exceptional craft beer program — rotating taps of Belgian, German, local San Diego, and hard-to-find microbrews from around the world. Unpretentious and reliably great.</p>
+                    <a href="https://www.the-publichouse.com/menu" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Jose's Mexican Courtroom -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Mexican · Tequila Bar</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍹</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Jose's Mexican Courtroom</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1037 Prospect St &nbsp;·&nbsp; (858) 454-7655</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Authentic Mexican kitchen with an unparalleled craft margarita program and tequila list — boutique and well-known labels, and a strong selection of Mezcals. Mexican beers plus locally crafted brews. Lively and festive on Prospect.</p>
+                    <a href="https://www.joses.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- MarketPlace Grill -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Persian · Mesquite Grill</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🔥</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">MarketPlace Grill</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">1030-C Torrey Pines Rd &nbsp;·&nbsp; (858) 456-9576</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Mouthwatering Persian dishes built on fresh, natural marinades — gourmet meats, seafood, and vegetables simmering over mesquite coals. An under-the-radar gem in La Jolla that consistently rewards first-time visitors.</p>
+                    <a href="https://marketplacegrille.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- The Lot -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Dine-In Cinema · All Day</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">8 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🎬</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">THE LOT</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7611 Fay Ave &nbsp;·&nbsp; (858) 777-0069</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Movie theater meets full-service restaurant — breakfast, brunch, lunch, or dinner, then a film in one of their large-screen luxury theaters. Laid-back atmosphere with a great happy hour. An easy, enjoyable evening for any size group.</p>
+                    <a href="https://www.thelotent.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Hennessey's -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Irish Pub · Sports Bar</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍻</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Hennessey's Tavern</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7811 Herschel Ave &nbsp;·&nbsp; (858) 551-8772</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Traditional, cozy, and genuinely Irish in character — the kind of pub that earns its warmth over decades. Open daily 11am–2am. A reliable anchor for watching a game, grabbing a cold pint, or settling in for a long evening on Herschel.</p>
+                    <a href="https://www.hennesseystavern.com/locations-la-jolla" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- The Promiscuous Fork -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Fusion · Bird Rock</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">14 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌴</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">The Promiscuous Fork</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">6984 La Jolla Blvd, Bird Rock &nbsp;·&nbsp; (858) 454-3663</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A playful menu blending Hawaiian, Mexican, smokehouse barbecue, and Southwestern flavors. A cool, local Bird Rock spot — perfect on your way back from the beach. Casual, creative, and easy to like.</p>
+                    <a href="https://www.thepromiscuousfork.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-6"><div class="border-t border-slate-200"></div></div>
+
+    <!-- CASUAL & QUICK -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-14">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-3xl">☀️</span>
+                    <div>
+                        <p class="text-xs font-bold tracking-widest uppercase text-sage">Tier Four</p>
+                        <h2 class="serif text-4xl md:text-5xl font-bold text-slate-900 leading-tight">Casual &amp; Quick</h2>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-base max-w-2xl ml-12">Morning coffee, neighborhood bakeries, fresh juice, and the perfect taco on the way back from the beach.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Harry's Coffee Shop -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Classic Diner · Est. 1960</span>
+                        <span class="text-[11px] bg-green-50 text-green-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">5 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">☕</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Harry's Coffee Shop</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7545 Girard Ave &nbsp;·&nbsp; Open daily 7am–2:30pm</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A La Jolla treasure since 1960, three blocks from the Pearl. Locally roasted coffee, farm-fresh eggs, and irresistible cinnamon rolls. A classic diner where breakfast is always available and nothing is ever rushed. A morning ritual worth building.</p>
+                    <a href="https://harryscoffeeshop.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Lilli's -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Café · Community Gathering</span>
+                        <span class="text-[11px] bg-green-50 text-green-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">5 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌸</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Lilli's Coffee Shop</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7467 Girard Ave &nbsp;·&nbsp; Open daily 7am–4pm</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Three blocks from the Pearl on Girard — a historic La Jolla gathering place for neighbors, foodies, and locals of all kinds. A sacred space that has been part of the community fabric for decades. Come for coffee, stay for the conversation.</p>
+                    <a href="https://lillilajolla.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Visit →</a>
+                </div>
+
+                <!-- The Cottage -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Brunch · American</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">8 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🥞</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">The Cottage</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7702 Fay Ave &nbsp;·&nbsp; Sun–Thu 7:30am–3pm · Fri–Sat 7:30am–4pm</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A La Jolla brunch institution for over 25 years. Traditional American and Southern Californian cuisine in a warm cottage setting. The kind of breakfast spot that earns a return visit every stay. Expect a line on weekend mornings — it's worth it.</p>
+                    <a href="https://www.cottagelajolla.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Sugar & Scribe -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Artisan Bakery</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">8 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🧁</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Sugar &amp; Scribe</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7660 Fay Ave &nbsp;·&nbsp; (858) 274-1733</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A darling bakery built on nearly 100-year-old family recipes — a blend of Irish tradition and Southern California charm. A must-visit during your stay. The pastries are extraordinary and the space is exactly the kind of place you'll want to linger in.</p>
+                    <a href="https://www.sugarandscribe.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Visit →</a>
+                </div>
+
+                <!-- The Taco Stand -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Authentic Mexican</span>
+                        <span class="text-[11px] bg-green-50 text-green-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">3 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🌯</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">The Taco Stand</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">621 Pearl St &nbsp;·&nbsp; (858) 551-6666</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Right on Pearl Street — practically at your doorstep. Casual, authentic, made-to-order tortillas and fresh guacamole. The kind of taco place that spoils you for everything else. Fast, good, and impossible to walk past.</p>
+                    <a href="https://www.letstaco.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Trilogy Sanctuary -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Organic Café · Rooftop</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🧘</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Trilogy Sanctuary</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7650 Girard Ave (upstairs) &nbsp;·&nbsp; (858) 633-3897</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Organic café and yoga studio loved by La Jolla locals. Sit on the rooftop for ocean views and a menu of raw vegan food, juice cleanses, and smoothies. A genuinely restorative stop — the full experience, not just the food.</p>
+                    <a href="https://www.trilogysanctuary.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Visit →</a>
+                </div>
+
+                <!-- Lean & Green -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Juice Bar · Healthy</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">8 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🥤</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Lean and Green Café</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">7825 Fay Ave &nbsp;·&nbsp; (858) 459-5326</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">The best organic juice bar in La Jolla. Healthy menu of wraps, salads, bowls, smoothies, and cold-pressed juices. Sit on the patio on a sunny day — which is most days. A recovery essential after a morning at the beach.</p>
+                    <a href="https://www.leanandgreencafe.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">View Menu →</a>
+                </div>
+
+                <!-- Bobboi Gelato -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Natural Gelato</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍦</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Bobboi Natural Gelato</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">8008 Girard Ave &nbsp;·&nbsp; Sun–Thu 11am–9pm · Fri–Sat 11am–10pm</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Eighteen rotating flavors made from what's available and in season — always six vegan options, seven days a week. The gelato here is made with a seriousness that shows in every scoop. An essential La Jolla stop, especially on a warm evening.</p>
+                    <a href="https://bobboi.com/la-jolla" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Visit →</a>
+                </div>
+
+                <!-- Bird Rock Coffee -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Specialty Coffee</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">☕</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Bird Rock Coffee Roasters</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">5627 La Jolla Blvd &nbsp;·&nbsp; Mon–Fri 6am–6pm · Sat–Sun 6:30am–6pm</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Serious specialty coffee roasted in La Jolla. The pour-over bar offers a meticulous, made-to-order experience across a rotating selection of single-origin beans. For guests who take their morning coffee as seriously as their travel.</p>
+                    <a href="https://www.thebirdrockcoffee.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Visit →</a>
+                </div>
+
+                <!-- Wayfarer Bread -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Artisan Bread · Pastry</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-500 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">12 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🍞</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">Wayfarer Bread &amp; Pastry</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">5525 La Jolla Blvd &nbsp;·&nbsp; Tue–Sun 8:30am–2:30pm · Pizza Fri–Sat 4:30–8pm</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">A small neighborhood bakery focused on naturally fermented breads hot and fresh from the oven. Pastries and fresh-bread sandwiches in the afternoon, wood-fired pizza Friday and Saturday evenings. Simple, honest, excellent.</p>
+                    <a href="https://www.wayfarerbread.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-slate-900 transition mt-auto">Visit →</a>
+                </div>
+
+                <!-- BE FRESH -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="text-xs font-semibold tracking-widest uppercase text-sage">Wraps · Delivery</span>
+                        <span class="text-[11px] bg-green-50 text-green-600 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">3 min walk</span>
+                    </div>
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-2xl">🥙</span>
+                        <h3 class="serif text-xl font-bold text-slate-900">BE FRESH</h3>
+                    </div>
+                    <p class="text-slate-400 text-[11px] mb-3">627 Pearl St &nbsp;·&nbsp; (858) 551-8786</p>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-1 mb-5">Right on Pearl Street — great wraps and sandwiches, fast and fresh. If you're staying in, they deliver. A reliable grab-and-go option for a quick lunch or an easy beach-day meal.</p>
+                    <span class="text-xs font-semibold text-slate-400 mt-auto">Order online for delivery</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WORTH THE DRIVE -->
+    <section class="bg-slate-deep py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-14">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-3xl">🚗</span>
+                    <div>
+                        <p class="text-xs font-bold tracking-widest uppercase text-sage">Beyond the Village</p>
+                        <h2 class="serif text-4xl md:text-5xl font-bold text-white leading-tight">Worth the Drive</h2>
+                    </div>
+                </div>
+                <p class="text-slate-300 text-base max-w-2xl ml-12">La Jolla's dining scene is extraordinary — but a short drive opens up some of San Diego's most celebrated restaurants. These are the ones worth leaving the neighborhood for.</p>
+            </div>
+
+            <!-- Sushi / Japanese -->
+            <div class="mb-10">
+                <p class="text-xs font-bold tracking-widest uppercase text-sage mb-5 ml-1">🍣 Best Sushi in San Diego</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-start justify-between mb-3">
+                            <span class="text-xs font-semibold tracking-widest uppercase text-sage">Japanese · Omakase · Pacific Beach</span>
+                            <span class="text-[11px] bg-white/10 text-slate-200 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">15 min drive</span>
+                        </div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🍣</span>
+                            <h3 class="serif text-xl font-bold text-white">Sushi Ota</h3>
+                        </div>
+                        <p class="text-slate-300 text-[11px] mb-3">4529 Mission Bay Dr, Pacific Beach &nbsp;·&nbsp; (858) 270-5670</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-5">Widely regarded as the finest sushi restaurant in San Diego — and many say California. Located in an unremarkable strip mall in Pacific Beach, which makes the interior all the more surprising. Reservations required days in advance; a line often forms outside regardless. If you love sushi, this is the place.</p>
+                        <a href="https://www.sushiota.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve Well in Advance →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-start justify-between mb-3">
+                            <span class="text-xs font-semibold tracking-widest uppercase text-sage">Elevated Mexican · UTC</span>
+                            <span class="text-[11px] bg-white/10 text-slate-200 px-2.5 py-0.5 rounded-full font-medium whitespace-nowrap">10 min drive</span>
+                        </div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🌮</span>
+                            <h3 class="serif text-xl font-bold text-white">Javier's</h3>
+                        </div>
+                        <p class="text-slate-300 text-[11px] mb-3">4301 La Jolla Village Dr, UTC &nbsp;·&nbsp; (858) 200-2222</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-5">A rich heritage of elevated Mexican cuisine in a captivating, sophisticated ambience. Very, very upscale — this is not your neighborhood taqueria. The cocktail program is exceptional and the food presentation is remarkable. A full dining experience.</p>
+                        <a href="https://www.javiers-cantina.com/la-jolla" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve a Table →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Downtown SD -->
+            <div class="mb-10">
+                <p class="text-xs font-bold tracking-widest uppercase text-sage mb-5 ml-1">🏙️ Downtown San Diego · Little Italy · 20 min drive</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🥩</span>
+                            <h3 class="serif text-xl font-bold text-white">Born and Raised</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">1909 India St &nbsp;·&nbsp; (619) 202-4577</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">San Diego's premier American steakhouse — dry-aged beef, an extraordinary bar program, and a room that earns its reputation for every special occasion.</p>
+                        <a href="https://bornandraisedsteak.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🔥</span>
+                            <h3 class="serif text-xl font-bold text-white">Herb &amp; Wood</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">2210 Kettner Blvd &nbsp;·&nbsp; (619) 955-8495</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">Chef Brian Malarkey's celebrated restaurant — rustic wood-fired dishes, Mediterranean flavors, California seasonality. Elevated and approachable in equal measure.</p>
+                        <a href="https://www.herbandwood.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🌿</span>
+                            <h3 class="serif text-xl font-bold text-white">Juniper &amp; Ivy</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">2228 Kettner Blvd &nbsp;·&nbsp; (619) 269-9036</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">Chef-driven menu built on hand-selected seasonal ingredients. Daily offerings rotate based on what local farmers and fishermen bring in each morning. A genuinely creative kitchen.</p>
+                        <a href="https://www.juniperandivy.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🥩</span>
+                            <h3 class="serif text-xl font-bold text-white">Huntress Steakhouse</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">376 Fifth Ave, Gaslamp &nbsp;·&nbsp; (619) 329-4868</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">A sleek, modern steakhouse in the heart of the Gaslamp Quarter. Premium cuts, strong cocktails, and a room with real energy. A great choice for a downtown evening.</p>
+                        <a href="https://huntresssteak.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🍝</span>
+                            <h3 class="serif text-xl font-bold text-white">Salvatore's</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">750 Front St &nbsp;·&nbsp; (619) 544-1865</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">Classic Italian downtown with the warmth and character that this cuisine does best. A reliable anchor in the heart of San Diego for a relaxed, satisfying dinner.</p>
+                        <a href="https://salvatoressandiego.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🥩</span>
+                            <h3 class="serif text-xl font-bold text-white">Cowboy Star</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">640 10th Ave &nbsp;·&nbsp; (619) 450-5880</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">A beloved downtown institution with a seasonal American menu and a commitment to local sourcing. Known for quality beef and a warm, welcoming room.</p>
+                        <a href="https://www.cowboystar.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Del Mar / North County -->
+            <div>
+                <p class="text-xs font-bold tracking-widest uppercase text-sage mb-5 ml-1">🌅 Del Mar &amp; North County · 25 min drive</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🏆</span>
+                            <h3 class="serif text-xl font-bold text-white">KITCHEN 1540</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">1540 Pacific Hwy, Del Mar (L'Auberge Hotel) &nbsp;·&nbsp; (858) 793-6460</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">Wine Spectator Award of Excellence, CA Restaurant Association Gold Medallion for Best Hotel Restaurant. Farm-to-table at the highest level, in one of San Diego's most beautiful dining rooms.</p>
+                        <a href="https://www.laubergedelmar.com/dining/" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🌊</span>
+                            <h3 class="serif text-xl font-bold text-white">MARKET Restaurant + Bar</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">3702 Via De La Valle, Del Mar &nbsp;·&nbsp; (858) 523-0007</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">Internationally influenced, locally driven. Blue cheese soufflé with anise-orange marmalade alongside miso-glazed cod with shrimp dumplings. A kitchen with genuine range and ambition. The sushi is also excellent.</p>
+                        <a href="https://marketdelmar.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🍷</span>
+                            <h3 class="serif text-xl font-bold text-white">Pamplemousse Grille</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">514 Via de La Valle, Solana Beach &nbsp;·&nbsp; (858) 792-9090</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">Established 1996. San Diego's premier upscale dining experience in a warm French Country Kitchen atmosphere. A special-occasion standard for North County — understated, excellent, and consistently awarded.</p>
+                        <a href="https://www.pgrille.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/10 hover:bg-white/15 transition flex flex-col">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="text-2xl">🍝</span>
+                            <h3 class="serif text-xl font-bold text-white">Cucina Enoteca</h3>
+                        </div>
+                        <p class="text-slate-400 text-[11px] mb-3">2730 Via de La Valle, Del Mar &nbsp;·&nbsp; (858) 704-4500</p>
+                        <p class="text-slate-300 text-sm leading-relaxed flex-1 mb-4">Italian flavors meets Southern California freshness. From-scratch pasta, innovative pizza, elevated antipasti, and a signature salumi program in a wine-bar setting. A convivial evening out.</p>
+                        <a href="https://www.urbankitchengroup.com" target="_blank" rel="noopener" class="text-xs font-semibold text-sage hover:text-white transition mt-auto">Reserve →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6 text-center bg-cream">
+        <div class="max-w-2xl mx-auto">
+            <p class="text-sage font-semibold text-sm tracking-widest uppercase mb-4">Your Home Base</p>
+            <h2 class="serif text-5xl font-bold text-slate-900 mb-6 leading-tight">All of This, Within Walking Distance</h2>
+            <p class="text-slate-600 text-lg mb-10 leading-relaxed">The Village Pearl puts you at the center of one of California's finest dining neighborhoods. Walk to the Village, stroll to Bird Rock, drive to the coast.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-700 transition shadow-lg">Book Your Stay</a>
+                <a href="index.html#neighborhood" class="border border-slate-300 text-slate-700 px-8 py-4 rounded-full font-semibold hover:border-slate-500 transition">Explore the Neighborhood</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-deep py-10 px-6 text-center">
+        <p class="text-slate-400 text-sm">© The Village Pearl &nbsp;·&nbsp; La Jolla, California</p>
+        <div class="mt-4 flex justify-center gap-8 text-sm text-slate-400">
+            <a href="index.html" class="hover:text-white transition">Home</a>
+            <a href="la-jolla-cove.html" class="hover:text-white transition">La Jolla Cove</a>
+            <a href="windansea.html" class="hover:text-white transition">Windansea Beach</a>
+            <a href="dining.html" class="hover:text-white transition">Dining Guide</a>
+        </div>
+    </footer>
+
+</body>
+</html>
