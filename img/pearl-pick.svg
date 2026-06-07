@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+  <defs>
+    <radialGradient id="pg" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#FEFDF8"/>
+      <stop offset="55%" stop-color="#EDE5C8"/>
+      <stop offset="100%" stop-color="#C8BEA2"/>
+    </radialGradient>
+  </defs>
+  <!-- Shell bottom half -->
+  <path d="M2 11.5 Q10 19 18 11.5" fill="#E0D5B0" stroke="#A89868" stroke-width="0.9"/>
+  <!-- Shell top half -->
+  <path d="M2 11.5 Q10 7 18 11.5" fill="#EDE5C2" stroke="#A89868" stroke-width="0.9"/>
+  <!-- Pearl -->
+  <circle cx="10" cy="12" r="4" fill="url(#pg)" stroke="#C0B898" stroke-width="0.5"/>
+  <!-- Pearl sheen highlight -->
+  <ellipse cx="8.7" cy="10.8" rx="1.4" ry="0.9" fill="white" opacity="0.5" transform="rotate(-20 8.7 10.8)"/>
+  <!-- Sparkle top -->
+  <line x1="10" y1="1.5" x2="10" y2="4" stroke="#D4A820" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Sparkle upper-right -->
+  <line x1="15.5" y1="3.5" x2="13.8" y2="5.5" stroke="#D4A820" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Sparkle upper-left -->
+  <line x1="4.5" y1="3.5" x2="6.2" y2="5.5" stroke="#D4A820" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
