@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Village Pearl | Luxury La Jolla Retreat</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Montserrat', sans-serif; }
@@ -21,7 +21,7 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="text-2xl font-bold serif italic text-slate-900">The Village Pearl</div>
+            <a href="index.html" class="text-2xl font-bold serif italic text-slate-900 hover:text-sage transition">The Village Pearl</a>
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
                 <a href="#home" class="hover:text-sage transition">Home</a>
                 <a href="#aura" class="hover:text-sage transition">The Aura</a>
@@ -30,7 +30,7 @@
                 <a href="#neighborhood" class="hover:text-sage transition">Neighborhood</a>
                 <a href="dining.html" class="hover:text-sage transition">Dining</a>
                 <a href="arts-culture.html" class="hover:text-sage transition">Arts & Culture</a>
-                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-slate-700 transition">Check Availability</a>
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" rel="noopener noreferrer" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-slate-700 transition">Check Availability</a>
             </div>
             <button id="ham-btn" class="md:hidden flex flex-col justify-center gap-[5px] w-10 h-10 p-2" onclick="toggleNav()" aria-label="Open menu">
                 <span class="block w-full h-0.5 bg-slate-900 transition-all duration-300" id="ham-top"></span>
@@ -48,8 +48,8 @@
                 <a href="dining.html" class="py-3 text-slate-700 font-medium border-b border-slate-100 hover:text-sage transition text-sm">Dining</a>
                 <a href="arts-culture.html" class="py-3 text-slate-700 font-medium border-b border-slate-100 hover:text-sage transition text-sm">Arts & Culture</a>
                 <div class="pt-5 flex flex-col gap-3">
-                    <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold text-center text-sm hover:bg-slate-700 transition">Book on Airbnb</a>
-                    <a href="https://www.vrbo.com/2189597" target="_blank" class="border border-slate-300 text-slate-700 px-6 py-3 rounded-full font-semibold text-center text-sm hover:border-slate-500 transition">Book on VRBO</a>
+                    <a href="https://www.airbnb.com/h/villagepearl" target="_blank" rel="noopener noreferrer" class="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold text-center text-sm hover:bg-slate-700 transition">Book on Airbnb</a>
+                    <a href="https://www.vrbo.com/2189597" target="_blank" rel="noopener noreferrer" class="border border-slate-300 text-slate-700 px-6 py-3 rounded-full font-semibold text-center text-sm hover:border-slate-500 transition">Book on VRBO</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
-        <img src="img/hero-twilight-v2.jpg"
+        <img loading="lazy" src="img/hero-twilight-v2.jpg"
              alt="The Village Pearl — 1938 Craftsman glowing at twilight, nestled in the La Jolla hillside"
              class="absolute w-full h-full object-cover object-center brightness-125">
         <div class="relative z-10 text-center text-white px-4">
@@ -65,8 +65,8 @@
             <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" style="text-shadow:0 2px 12px rgba(0,0,0,0.55)">A Sun-Drenched<br><span class="italic">1938 Craftsman Retreat</span></h1>
             <p class="text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto" style="text-shadow:0 1px 8px rgba(0,0,0,0.6)">1,850 sq ft of coastal sanctuary. Nestled in the La Jolla hillside. Walk to the Cove, Windansea, and the Village.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-white text-slate-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-cream transition shadow-xl">Book on Airbnb</a>
-                <a href="https://www.vrbo.com/2189597" target="_blank" class="bg-white/20 text-white border border-white/50 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 transition shadow-xl backdrop-blur-sm">Book on VRBO</a>
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" rel="noopener noreferrer" class="bg-white text-slate-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-cream transition shadow-xl">Book on Airbnb</a>
+                <a href="https://www.vrbo.com/2189597" target="_blank" rel="noopener noreferrer" class="bg-white/20 text-white border border-white/50 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 transition shadow-xl backdrop-blur-sm">Book on VRBO</a>
             </div>
         </div>
     </section>
@@ -75,9 +75,9 @@
     <section id="aura" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div class="relative">
-                <img src="img/aura-living-room.jpg"
-                     alt="Village Pearl living room — sheer curtains billowing, slider open to deck, Pacific light"
-                     class="rounded-2xl shadow-2xl w-full h-[480px] object-cover">
+                <img loading="lazy" src="img/aura-living-room.jpg"
+                     alt="Village Pearl living room — sheer curtains billowing, French doors open to deck, Pacific light"
+                     class="rounded-2xl shadow-2xl w-full h-64 md:h-[480px] object-cover">
                 <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-sage/20 rounded-full -z-10"></div>
             </div>
             <div>
@@ -87,7 +87,7 @@
                     Step into a sanctuary where historic grandeur meets the effortless ease of coastal living. The Village Pearl is a meticulously preserved Craftsman cottage that does more than house guests — it captures a feeling.
                 </p>
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                    White-painted hardwood floors, sheer linen curtains, a stone fireplace, and sliding doors that open directly onto the deck — every detail is curated for the kind of rest you only find at the coast.
+                    White-painted hardwood floors, sheer linen curtains, a stone fireplace, and French doors that open directly onto the deck — every detail is curated for the kind of rest you only find at the coast.
                 </p>
                 <div class="grid grid-cols-2 gap-4 text-sm font-medium text-slate-700">
                     <div class="flex items-center space-x-2"><span class="text-sage">✦</span><span>4 Bedrooms · 3 Bathrooms</span></div>
@@ -109,9 +109,9 @@
 
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="order-2 md:order-1">
-                    <img src="img/kitchen.jpg"
+                    <img loading="lazy" src="img/kitchen.jpg"
                          alt="Village Pearl chef's kitchen — reclaimed wood island, globe pendants, professional range"
-                         class="rounded-2xl shadow-lg w-full h-[420px] object-cover">
+                         class="rounded-2xl shadow-lg w-full h-56 md:h-[420px] object-cover">
                 </div>
                 <div class="order-1 md:order-2">
                     <h3 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">The Heart of the Home</h3>
@@ -137,9 +137,9 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="img/backyard-twilight.jpg"
+                    <img loading="lazy" src="img/backyard-twilight.jpg"
                          alt="Village Pearl backyard oasis at twilight — outdoor seating, French doors, lush landscaping"
-                         class="rounded-2xl shadow-lg w-full h-[420px] object-cover brightness-125">
+                         class="rounded-2xl shadow-lg w-full h-56 md:h-[420px] object-cover brightness-125">
                 </div>
             </div>
         </div>
@@ -162,15 +162,15 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',0)">
-                        <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Hillside setting at twilight</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',1)">
-                        <img src="img/aerial-ocean-panorama.jpg" alt="Aerial — Pacific Ocean panorama from La Jolla hillside" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/aerial-ocean-panorama.jpg" alt="Aerial — Pacific Ocean panorama from La Jolla hillside" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Aerial — Pacific Ocean panorama</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative col-span-2 md:col-span-1" onclick="openGallery('walkthrough',2)">
-                        <img src="img/craftsman-entry.jpg" alt="1938 Craftsman entry — cedar shake siding, covered porch" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/craftsman-entry.jpg" alt="1938 Craftsman entry — cedar shake siding, covered porch" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">1938 Craftsman entry — covered porch</p></div>
                     </div>
                 </div>
@@ -184,27 +184,27 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',4)">
-                        <img src="img/living-room-fireplace.jpg" alt="Living room — fireplace, open slider to Pacific deck" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Fireplace + open slider to deck</p></div>
+                        <img loading="lazy" src="img/living-room-fireplace.jpg" alt="Living room — fireplace, French doors open to Pacific deck" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Fireplace + French doors open to deck</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',3)">
-                        <img src="img/aura-living-room.jpg" alt="Sheer curtains billowing — slider open to deck, Pacific light" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Sheer curtains, slider open to Pacific</p></div>
+                        <img loading="lazy" src="img/aura-living-room.jpg" alt="Sheer curtains billowing — French doors open to deck, Pacific light" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Sheer curtains, French doors open to the Pacific</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',5)">
-                        <img src="img/living-room-entry.jpg" alt="Living room from entry — gallery wall, white oak floors" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/living-room-entry.jpg" alt="Living room from entry — gallery wall, white oak floors" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">From the entry — gallery wall, oak floors</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',6)">
-                        <img src="img/living-room-tv.jpg" alt="Living room — wall-mounted TV, fireplace, gallery wall art" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/living-room-tv.jpg" alt="Living room — wall-mounted TV, fireplace, gallery wall art" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Living room — TV, fireplace, gallery wall</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',7)">
-                        <img src="img/living-room-sofa.jpg" alt="Living room — sectional sofa, staircase, open door to garden" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/living-room-sofa.jpg" alt="Living room — sectional sofa, staircase, open door to garden" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Living room — sectional sofa, open to garden</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',8)">
-                        <img src="img/den-sitting-room.jpg" alt="Den — writing desk, wicker chair, kilim rug, tree views" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/den-sitting-room.jpg" alt="Den — writing desk, wicker chair, kilim rug, tree views" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Den — writing desk, kilim rug</p></div>
                     </div>
                 </div>
@@ -218,19 +218,19 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',9)">
-                        <img src="img/kitchen.jpg" alt="Chef's kitchen — reclaimed wood island, open shelves" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/kitchen.jpg" alt="Chef's kitchen — reclaimed wood island, open shelves" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Chef's kitchen — reclaimed wood island</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',10)">
-                        <img src="img/kitchen-counter.jpg" alt="Kitchen — quartz island, glass pendants, garden window" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/kitchen-counter.jpg" alt="Kitchen — quartz island, glass pendants, garden window" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Quartz island, glass pendants</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',11)">
-                        <img src="img/kitchen-flow.jpg" alt="Kitchen flowing to the upper deck" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/kitchen-flow.jpg" alt="Kitchen flowing to the upper deck" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Open flow to upper deck</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',12)">
-                        <img src="img/dining-nook.jpg" alt="Dining nook — reclaimed wood table, leather chairs" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/dining-nook.jpg" alt="Dining nook — reclaimed wood table, leather chairs" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Dining nook — reclaimed wood table</p></div>
                     </div>
                 </div>
@@ -244,27 +244,27 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <div class="group overflow-hidden rounded-xl h-64 cursor-pointer relative" onclick="openGallery('walkthrough',13)">
-                        <img src="img/upper-deck-dining.jpg" alt="Upper deck — alfresco dining, mosaic table, tree canopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/upper-deck-dining.jpg" alt="Upper deck — alfresco dining, mosaic table, tree canopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Alfresco dining under the tree canopy</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-64 cursor-pointer relative" onclick="openGallery('walkthrough',14)">
-                        <img src="img/upper-deck-table.jpg" alt="Upper deck — red mosaic tile table, outdoor dining, tree canopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/upper-deck-table.jpg" alt="Upper deck — red mosaic tile table, outdoor dining, tree canopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Upper deck — mosaic tile table, tree canopy</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-64 cursor-pointer relative" onclick="openGallery('walkthrough',15)">
-                        <img src="img/upper-deck-table-alt.jpg" alt="Upper deck — alternate view, outdoor dining, Pacific setting" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/upper-deck-table-alt.jpg" alt="Upper deck — alternate view, outdoor dining, Pacific setting" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Upper deck — opposite view, outdoor setting</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-64 cursor-pointer relative" onclick="openGallery('walkthrough',16)">
-                        <img src="img/upper-deck-chairs.jpg" alt="Upper deck — rocking chairs, open sky, west-facing Pacific views" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Upper deck — rocking chairs, open Pacific sky</p></div>
+                        <img loading="lazy" src="img/upper-deck-chairs.jpg" alt="Upper deck — rocking chair, open sky, west-facing Pacific views" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Upper deck — rocking chair, open Pacific sky</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-64 cursor-pointer relative" onclick="openGallery('walkthrough',17)">
-                        <img src="img/upper-deck-french-doors.jpg" alt="Upper deck — French doors opening to living room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/upper-deck-french-doors.jpg" alt="Upper deck — French doors opening to living room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">French doors — deck to living room</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-64 cursor-pointer relative" onclick="openGallery('walkthrough',18)">
-                        <img src="img/backyard-twilight.jpg" alt="Upper deck at twilight — Pacific sky, golden hour" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/backyard-twilight.jpg" alt="Upper deck at twilight — Pacific sky, golden hour" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Golden hour from the deck</p></div>
                     </div>
                 </div>
@@ -278,27 +278,27 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',19)">
-                        <img src="img/master-bedroom.jpg" alt="King bed — hand-carved mandala headboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/master-bedroom.jpg" alt="King bed — hand-carved mandala headboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">King bed — mandala headboard</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',20)">
-                        <img src="img/master-sitting.jpg" alt="Seating nook — wicker chairs, Pacific light" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/master-sitting.jpg" alt="Seating nook — wicker chairs, Pacific light" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Seating nook — Pacific light</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',21)">
-                        <img src="img/master-bedroom-doors.jpg" alt="Master bedroom — private ensuite and walk-in closet access" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/master-bedroom-doors.jpg" alt="Master bedroom — private ensuite and walk-in closet access" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Private ensuite + walk-in closet access</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',22)">
-                        <img src="img/master-ensuite-closet.jpg" alt="Master ensuite — walk-in closet, vanity and toilet" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/master-ensuite-closet.jpg" alt="Master ensuite — walk-in closet, vanity and toilet" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Walk-in closet + ensuite</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',23)">
-                        <img src="img/master-ensuite-vanity.jpg" alt="Master ensuite — vessel sink, pebble floors, rain-head shower" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/master-ensuite-vanity.jpg" alt="Master ensuite — vessel sink, pebble floors, rain-head shower" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Ensuite — vessel sink, rain-head shower</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',24)">
-                        <img src="img/master-ocean-view.jpg" alt="Master bedroom view — Pacific ocean and La Jolla tree canopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/master-ocean-view.jpg" alt="Master bedroom view — Pacific ocean and La Jolla tree canopy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Pacific ocean view — La Jolla to the horizon</p></div>
                     </div>
                 </div>
@@ -312,7 +312,7 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative col-span-2 md:col-span-1" onclick="openGallery('walkthrough',25)">
-                        <img src="img/bathroom-clawfoot.jpg" alt="Upper hall bath — clawfoot soaking tub, geometric star pendant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/bathroom-clawfoot.jpg" alt="Upper hall bath — clawfoot soaking tub, geometric star pendant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Clawfoot soaking tub — geometric star pendant</p></div>
                     </div>
                 </div>
@@ -326,27 +326,27 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',26)">
-                        <img src="img/queen-bedroom-3.jpg" alt="Queen retreat — tree canopy views, full natural light" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/queen-bedroom-3.jpg" alt="Queen retreat — tree canopy views, full natural light" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Queen retreat — tree canopy views</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',27)">
-                        <img src="img/queen-bedroom-4.jpg" alt="Queen retreat — French doors open to backyard garden" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/queen-bedroom-4.jpg" alt="Queen retreat — French doors open to backyard garden" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Garden access — wicker armoire, outdoor lounge</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',28)">
-                        <img src="img/queen-bedroom.jpg" alt="Queen retreat — French doors to garden oasis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/queen-bedroom.jpg" alt="Queen retreat — French doors to garden oasis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">French doors to garden oasis</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',29)">
-                        <img src="img/queen-bedroom-2.jpg" alt="Queen retreat — bamboo headboard, sheer curtains" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/queen-bedroom-2.jpg" alt="Queen retreat — bamboo headboard, sheer curtains" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Bamboo headboard, garden access</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',30)">
-                        <img src="img/bathroom-moroccan.jpg" alt="Hall bath — Moroccan lantern vanity" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/bathroom-moroccan.jpg" alt="Hall bath — Moroccan lantern vanity" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Moroccan lantern vanity</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',31)">
-                        <img src="img/bathroom-shower.jpg" alt="Hall bath — mint glass tile shower" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/bathroom-shower.jpg" alt="Hall bath — mint glass tile shower" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Mint glass tile shower</p></div>
                     </div>
                 </div>
@@ -360,15 +360,15 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',32)">
-                        <img src="img/bunk-room.jpg" alt="Built-in twin bunks with pull-out trundle" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/bunk-room.jpg" alt="Built-in twin bunks with pull-out trundle" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Built-in bunks + pull-out trundle</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',33)">
-                        <img src="img/bunk-bay-window.jpg" alt="Bay window — panoramic ocean views" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/bunk-bay-window.jpg" alt="Bay window — panoramic ocean views" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Bay window — panoramic ocean views</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative col-span-2 md:col-span-1" onclick="openGallery('walkthrough',34)">
-                        <img src="img/bunk-twin.jpg" alt="Additional twin — beach is our happy place" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/bunk-twin.jpg" alt="Additional twin — beach is our happy place" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">"The beach is our happy place"</p></div>
                     </div>
                 </div>
@@ -382,27 +382,27 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',35)">
-                        <img src="img/backyard-oasis.jpg" alt="Backyard oasis — blue outdoor furniture, private lawn" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/backyard-oasis.jpg" alt="Backyard oasis — blue outdoor furniture, private lawn" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Private backyard — blue outdoor lounge</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',36)">
-                        <img src="img/garden-overview.jpg" alt="Garden from above — mature plantings, French doors" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/garden-overview.jpg" alt="Garden from above — mature plantings, French doors" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Garden from above — mature landscaping</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',37)">
-                        <img src="img/garden-tiered.jpg" alt="Tiered garden — staircase, lush mature landscaping" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/garden-tiered.jpg" alt="Tiered garden — staircase, lush mature landscaping" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Tiered garden — staircase to upper deck</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',38)">
-                        <img src="img/upper-deck-sunset-view.jpg" alt="Open Pacific sky — west-facing views from the oasis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/upper-deck-sunset-view.jpg" alt="Open Pacific sky — west-facing views from the oasis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Open Pacific sky — west-facing views</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',39)">
-                        <img src="img/outdoor-shower.jpg" alt="Outdoor shower — reclaimed wood surround, private garden" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/outdoor-shower.jpg" alt="Outdoor shower — reclaimed wood surround, private garden" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Outdoor shower — private garden setting</p></div>
                     </div>
                     <div class="group overflow-hidden rounded-xl h-52 cursor-pointer relative" onclick="openGallery('walkthrough',40)">
-                        <img src="img/aerial-sunset.jpg" alt="Aerial at sunset — Pacific horizon beyond La Jolla" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
+                        <img loading="lazy" src="img/aerial-sunset.jpg" alt="Aerial at sunset — Pacific horizon beyond La Jolla" class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition duration-300 flex items-end p-3"><p class="text-white text-xs font-medium opacity-0 group-hover:opacity-100 transition duration-300">Aerial at sunset — Pacific horizon</p></div>
                     </div>
                 </div>
@@ -421,7 +421,7 @@
             <!-- Master -->
             <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer" onclick="openGallery('master')">
                 <div class="h-64 overflow-hidden relative">
-                    <img src="img/master-bedroom.jpg"
+                    <img loading="lazy" src="img/master-bedroom.jpg"
                          alt="Village Pearl master bedroom — King bed, mandala headboard, bamboo shades"
                          class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-3 right-3 bg-black/50 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">5 photos</div>
@@ -439,7 +439,7 @@
             <!-- Queen Rooms -->
             <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer" onclick="openGallery('queen')">
                 <div class="h-64 overflow-hidden relative">
-                    <img src="img/queen-bedroom.jpg"
+                    <img loading="lazy" src="img/queen-bedroom.jpg"
                          alt="Village Pearl Queen bedroom — French doors to garden, white linens"
                          class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-3 right-3 bg-black/50 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">3 photos</div>
@@ -457,7 +457,7 @@
             <!-- Bunk Room -->
             <div class="group bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer" onclick="openGallery('bunk')">
                 <div class="h-64 overflow-hidden relative">
-                    <img src="img/bunk-room.jpg"
+                    <img loading="lazy" src="img/bunk-room.jpg"
                          alt="Village Pearl bunk room — built-in twin bunks with trundle, bay window"
                          class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute bottom-3 right-3 bg-black/50 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm">3 photos</div>
@@ -489,7 +489,7 @@
                 <a href="arts-culture.html"
                    class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
                     <div class="h-72 overflow-hidden">
-                        <img src="img/landmark-mcasd.jpg"
+                        <img loading="lazy" src="img/landmark-mcasd.jpg"
                              alt="Museum of Contemporary Art San Diego — La Jolla"
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
@@ -508,7 +508,7 @@
                 <a href="windansea.html"
                    class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
                     <div class="h-72 overflow-hidden">
-                        <img src="img/landmark-windansea.jpg"
+                        <img loading="lazy" src="img/landmark-windansea.jpg"
                              alt="Windansea Beach — the famous palm-frond surf shack, California Historic Landmark"
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
@@ -527,7 +527,7 @@
                 <a href="la-jolla-cove.html"
                    class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
                     <div class="h-72 overflow-hidden">
-                        <img src="img/landmark-lajolla-cove.jpg"
+                        <img loading="lazy" src="img/landmark-lajolla-cove.jpg"
                              alt="La Jolla Cove — iconic turquoise waters"
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
@@ -546,7 +546,7 @@
                 <a href="dining.html"
                    class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
                     <div class="h-72 overflow-hidden">
-                        <img src="img/rear-ocean-twilight.jpg"
+                        <img loading="lazy" src="img/rear-ocean-twilight.jpg"
                              alt="Village Pearl — rear ocean view at twilight"
                              class="w-full h-full object-cover brightness-125 group-hover:scale-105 transition duration-500">
                     </div>
@@ -565,7 +565,7 @@
                 <a href="arts-culture.html#the-lot"
                    class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
                     <div class="h-72 overflow-hidden">
-                        <img src="img/the-lot.jpg"
+                        <img loading="lazy" src="img/the-lot.jpg"
                              alt="The Lot — luxury cinema La Jolla"
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
@@ -584,7 +584,7 @@
                 <a href="arts-culture.html"
                    class="group relative rounded-2xl overflow-hidden shadow-xl cursor-pointer block">
                     <div class="h-72 overflow-hidden">
-                        <img src="img/landmark-mcasd.jpg"
+                        <img loading="lazy" src="img/landmark-mcasd.jpg"
                              alt="Museum of Contemporary Art San Diego, La Jolla"
                              class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
@@ -623,13 +623,13 @@
                     class="w-full"
                     preload="none"
                     id="drone-video"
-                    style="pointer-events:none;">
+                    poster="img/hero-twilight-v2.jpg">
                     <source src="img/drone-tour.mp4" type="video/mp4">
                 </video>
                 <div id="video-poster"
                      class="absolute inset-0 cursor-pointer"
-                     onclick="var v=document.getElementById('drone-video'); var p=document.getElementById('video-poster'); p.style.display='none'; v.play(); document.addEventListener('mousemove', function re(){v.style.pointerEvents='auto'; document.removeEventListener('mousemove',re);}, {once:true});">
-                    <img src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover brightness-125">
+                     onclick="var v=document.getElementById('drone-video'); var p=document.getElementById('video-poster'); p.style.display='none'; v.play();">
+                    <img loading="lazy" src="img/hero-twilight-v2.jpg" alt="The Village Pearl at twilight" class="w-full h-full object-cover brightness-125">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-20 h-20 rounded-full bg-black/25 border border-white/40 flex items-center justify-center hover:bg-black/45 transition">
                             <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -647,8 +647,8 @@
             <p class="text-slate-500 mb-2">— Airbnb Guest Review</p>
             <p class="text-sage font-semibold mb-10">4.88 Stars · 34+ Reviews · Airbnb Guest Favorite</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-slate-700 transition shadow-lg inline-block">Check on Airbnb</a>
-                <a href="https://www.vrbo.com/2189597" target="_blank" class="border-2 border-slate-900 text-slate-900 px-10 py-5 rounded-full font-semibold text-lg hover:bg-slate-100 transition shadow-lg inline-block">Check on VRBO</a>
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" rel="noopener noreferrer" class="bg-slate-900 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-slate-700 transition shadow-lg inline-block">Check on Airbnb</a>
+                <a href="https://www.vrbo.com/2189597" target="_blank" rel="noopener noreferrer" class="border-2 border-slate-900 text-slate-900 px-10 py-5 rounded-full font-semibold text-lg hover:bg-slate-100 transition shadow-lg inline-block">Check on VRBO</a>
             </div>
         </div>
     </section>
@@ -657,7 +657,7 @@
     <footer class="bg-cream border-t border-slate-200 py-12 px-6">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="flex flex-col items-center mb-8 md:mb-0">
-                <div class="text-2xl font-bold serif italic text-slate-900 mb-1">The Village Pearl</div>
+                <a href="index.html" class="text-2xl font-bold serif italic text-slate-900 hover:text-sage transition mb-1">The Village Pearl</a>
                 <p class="text-slate-500 text-sm">La Jolla, California</p>
             </div>
             <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-slate-600 text-sm">
@@ -669,8 +669,8 @@
                 <a href="terms.html" class="hover:text-sage transition">Terms</a>
             </div>
             <div class="mt-8 md:mt-0 flex gap-3">
-                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" class="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-700 transition text-sm">Airbnb</a>
-                <a href="https://www.vrbo.com/2189597" target="_blank" class="border border-slate-300 text-slate-700 px-6 py-3 rounded-full font-semibold hover:border-slate-500 transition text-sm">VRBO</a>
+                <a href="https://www.airbnb.com/h/villagepearl" target="_blank" rel="noopener noreferrer" class="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-700 transition text-sm">Airbnb</a>
+                <a href="https://www.vrbo.com/2189597" target="_blank" rel="noopener noreferrer" class="border border-slate-300 text-slate-700 px-6 py-3 rounded-full font-semibold hover:border-slate-500 transition text-sm">VRBO</a>
             </div>
         </div>
         <div class="text-center mt-10 text-xs text-slate-400">
@@ -719,8 +719,8 @@ galleries.walkthrough = [
     { src: 'img/hero-twilight-v2.jpg',        caption: 'The Village Pearl at twilight — La Jolla hillside setting' },
     { src: 'img/aerial-ocean-panorama.jpg',   caption: 'Aerial overview — Pacific horizon stretching beyond La Jolla' },
     { src: 'img/craftsman-entry.jpg',         caption: '1938 Craftsman entry — cedar shake siding, covered porch, step lighting' },
-    { src: 'img/aura-living-room.jpg',        caption: 'Sheer curtains billowing — slider open to deck, Pacific light' },
-    { src: 'img/living-room-fireplace.jpg',   caption: 'Living room — fireplace, open slider to Pacific view deck' },
+    { src: 'img/aura-living-room.jpg',        caption: 'Sheer curtains billowing — French doors open to deck, Pacific light' },
+    { src: 'img/living-room-fireplace.jpg',   caption: 'Living room — fireplace, French doors open to Pacific view deck' },
     { src: 'img/living-room-entry.jpg',       caption: 'Living room from entry — gallery wall, white oak floors, staircase' },
     { src: 'img/living-room-tv.jpg',          caption: 'Living room — wall-mounted TV, stone fireplace, gallery wall, white oak floors' },
     { src: 'img/living-room-sofa.jpg',        caption: 'Living room — sectional sofa, brass ceiling fan, open door to garden' },
@@ -732,7 +732,7 @@ galleries.walkthrough = [
     { src: 'img/upper-deck-dining.jpg',       caption: 'Upper deck — alfresco dining, mosaic tile table, tree canopy' },
     { src: 'img/upper-deck-table.jpg',        caption: 'Upper deck — red mosaic tile table, alfresco dining, tree canopy' },
     { src: 'img/upper-deck-table-alt.jpg',    caption: 'Upper deck — opposite view, outdoor dining, Pacific hillside setting' },
-    { src: 'img/upper-deck-chairs.jpg',       caption: 'Upper deck — rocking chairs, open sky, west-facing Pacific views' },
+    { src: 'img/upper-deck-chairs.jpg',       caption: 'Upper deck — rocking chair, open sky, west-facing Pacific views' },
     { src: 'img/upper-deck-french-doors.jpg', caption: 'Upper deck French doors — seamless transition to the living room' },
     { src: 'img/backyard-twilight.jpg',       caption: 'Deck at twilight — Pacific sky turning gold at sunset' },
     { src: 'img/master-bedroom.jpg',          caption: 'Master Sanctuary — King bed, hand-carved mandala headboard' },
